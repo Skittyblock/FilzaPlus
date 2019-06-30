@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>components</key>
+  <dict>
+    <key>urls</key>
+    <dict>
+      <key>regex</key>
+      <string>((https?|mailto|ftp|file)://([-\w\.]+)+(:\d+)?(/([\w/_\.]*(\?\S+)?)?)?)</string>
+    </dict>
+    <key>numbers</key>
+    <dict>
+      <key>regex</key>
+      <string>#([0-9a-fA-F]{3,6})</string>
+      <key>group</key>
+      <integer>1</integer>
+    </dict>
+    <key>strings</key>
+    <dict>
+      <key>regex</key>
+      <string>("(?:[^"\\]|\\.)*")</string>
+    </dict>
+    <key>classes</key>
+    <dict>
+      <key>regex</key>
+      <string>(.*?)\s\{</string>
+      <key>group</key>
+      <integer>1</integer>
+    </dict>
+    <key>documentation_markup</key>
+    <dict>
+      <key>regex</key>
+      <string>\/\*(.*?)\*\/</string>
+    </dict>
+    <key>documentation_markup_keywords</key>
+    <dict>
+      <key>regex</key>
+      <string>(\/\*|\*\/)</string>
+    </dict>
+  </dict>
+  <key>extensions</key>
+  <array>
+    <string>css</string>
+  </array>
+</dict>
+</plist>

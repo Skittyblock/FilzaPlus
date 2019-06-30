@@ -1,0 +1,12 @@
+Package: xyz.skitty.filzaplus
+Name: FilzaPlus
+Depends: mobilesubstrate, com.tigisoftware.filza
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Turn Filza into a code editor.
+Icon: https://skitty.xyz/repo/icons/xyz.skitty.filzaplus.png
+Depiction: https://skitty.xyz/repo/depictions/?p=xyz.skitty.filzaplus
+SileoDepiction: https://skitty.xyz/repo/depictions/?s=xyz.skitty.filzaplus
+Maintainer: Skitty
+Author: Skitty
+Section: Tweaks

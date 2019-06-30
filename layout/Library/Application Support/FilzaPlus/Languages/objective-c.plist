@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>components</key>
+  <dict>
+    <key>keywords</key>
+    <dict>
+      <key>regex</key>
+      <string>\b(int|float|while|char|export|sizeof|typedef|const|struct|for|union|unsigned|long|volatile|static|bool|mutable|if|do|return|goto|void|enum|else|break|extern|asm|case|short|default|double|register|explicit|signed|typename|this|switch|continue|wchar_t|inline|readonly|assign|readwrite|self|@synchronized|id|typeof|nonatomic|super|unichar|IBOutlet|IBAction|strong|weak|copy|in|out|inout|__strong|__weak|__block|__autoreleasing|@interface|@implementation|@private|@protected|@public|@try|@property|@end|@throw|@catch|@finally|@autoreleasepool|@synthesize|@dynamic|@selector|@optional|@required|@import|_Nonnull|_Nullable|_Null_unspecified|getter|setter|retain|unsafe_unretained|nonnull|nullable|null_unspecified|null_resettable|class|instancetype|NS_INLINE|NS_AVAILABLE|NS_DEPRECATED|NS_ENUM NS_OPTIONS|NS_ASSUME_NONNULL_BEGIN|NS_ASSUME_NONNULL_END|false|true|FALSE|TRUE|nil|YES|NO|NULL|BOOL|dispatch_once_t|dispatch_queue_t|dispatch_sync|dispatch_async|dispatch_once)\b</string>
+    </dict>
+    <key>preprocessors</key>
+    <dict>
+      <key>regex</key>
+      <string>(#.*?)[\r\n]</string>
+    </dict>
+    <key>urls</key>
+    <dict>
+      <key>regex</key>
+      <string>((https?|mailto|ftp|file)://([-\w\.]+)+(:\d+)?(/([\w/_\.]*(\?\S+)?)?)?)</string>
+    </dict>
+    <key>classes</key>
+    <dict>
+      <key>regex</key>
+      <string>\b(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)\w+</string>
+    </dict>
+    <key>attributes</key>
+    <dict>
+      <key>regex</key>
+      <string>(\.[^\d]\w+)</string>
+    </dict>
+    <key>numbers</key>
+    <dict>
+      <key>regex</key>
+      <string>\b(0x[0-9A-F]+|[0-9]+)\b</string>
+    </dict>
+    <key>characters</key>
+    <dict>
+      <key>regex</key>
+      <string>(\'.\')</string>
+    </dict>
+    <key>strings</key>
+    <dict>
+      <key>regex</key>
+      <string>(@?"(?:[^\"\\]|\\.)*")</string>
+    </dict>
+    <key>comments</key>
+    <dict>
+      <key>regex</key>
+      <string>\/\/[^\"\n\r]*(?:"[^"\n\r]*"[^"\n\r]*)*[\r\n]</string>
+    </dict>
+    <key>documentation_markup</key>
+    <dict>
+      <key>regex</key>
+      <string>\/\*(.*?|\n)+\*\/</string>
+      <key>group</key>
+      <integer>1</integer>
+    </dict>
+    <key>documentation_markup_keywords</key>
+    <dict>
+      <key>regex</key>
+      <string>(\/\*|\*\/)</string>
+    </dict>
+  </dict>
+  <key>extensions</key>
+  <array>
+    <string>m</string>
+    <string>mm</string>
+    <string>xm</string>
+    <string>h</string>
+  </array>
+</dict>
+</plist>
