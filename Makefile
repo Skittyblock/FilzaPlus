@@ -1,4 +1,4 @@
-PACKAGE_VERSION = 1.0
+PACKAGE_VERSION = 1.0-1
 TARGET = iphone:clang::7.0
 ARCHS = armv7 arm64 arm64e
 
